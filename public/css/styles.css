@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d8edfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px; /* Lebar container */
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    position: relative;
+}
+
+.text-section {
+    width: 50%;
+    position: relative;
+}
+
+.text-section img {
+    width: 100%; /* Sesuaikan gambar dengan area teks */
+    border-radius: 10px;
+}
+
+.text-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    margin-top: 30px;
+}
+
+.text-section h1 .dot {
+    color: #007bff; /* Warna bulatan biru */
+    font-size: 60px;
+}
+
+.login-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1; /* Supaya berada di atas background */
+}
+
+.email-input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-top: 10px; /* Pindah input email ke atas */
+}
+
+.create-account-btn {
+    background-color: #fefeff; /* Warna tombol Buat Akun */
+    color: #1E90FF;
+    padding: 15px 20px;
+    border: 2px solid #1E90FF;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px; /* Jarak atas tombol Buat Akun */
+    width: 100%; /* Membuat tombol lebar penuh */
+    text-align: center;
+}
+
+.create-account-btn:hover {
+    background-color: #468dff;
+    color: white;
+    box-shadow: 0px 4px 15px rgba(30, 144, 255, 0.5);
+}
+
+.google-btn {
+    background-color: #468dff;
+    color: white;
+    padding: 15px 20px;
+    border: 2px solid #1E90FF;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.google-btn:hover {
+    background-color: #fcfcfc;
+    color: #468dff;
+    box-shadow: 0px 4px 15px rgba(151, 203, 255, 0.5);
+}
+
+.or-text {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    width: 100%;
+}
+
+.alternative-login {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.apple-btn, .facebook-btn {
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    width: 40%; /* Menjadikan tombol lebih proporsional */
+    cursor: pointer;
+    text-align: center;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+}
+
+.dots-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.create-account {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #007bff; /* Warna untuk link */
+    width: 100%; /* Agar text berada di tengah */
+}
+
+.create-account a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
