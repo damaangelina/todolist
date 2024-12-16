@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TugasController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing3');
 });
 
 Route::get('/landing', function () {
@@ -17,10 +17,6 @@ Route::get('/navigasi', function () {
 
 Route::get('/landing2', function () {
     return view('landing2');
-});
-
-Route::get('/landing3', function () {
-    return view('landing3');
 });
 
 Route::get('/login', function () {
